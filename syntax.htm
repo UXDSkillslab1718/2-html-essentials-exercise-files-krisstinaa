@@ -2,17 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>HTML Syntax</title>
+<title>HTML syntax</title>
 <link href="_css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-HTML Essential Training HTML Syntax
+    <header role="banner">
+HTML Essential Training
+Introduction to HTML</header>
+    
 <ul>
+    <nav role = "navigation">
   <li><a href="intro.htm" title="Introduction to HTML">Introduction to HTML</a></li>
   <li><a href="syntax.htm" title="HTML syntax">HTML syntax</a></li>
   <li><a href="links.htm" title="Creating links">Creating links</a></li>
   <li><a href="reference.htm" title="HTML Reference">HTML reference</a></li>
   <li><a href="next.htm" title="Next steps">Next steps</a></li>
+    </nav>
 </ul>
 <p>Because HTML is often the people&rsquo;s first experience with coding, there can be a fair amount of apprehension about learning it. Thankfully, HTML syntax is relatively simple and easy to learn. Most people can learn the basics of HTML and begin coding it within the same day.</p>
 A markup language
@@ -30,7 +35,7 @@ Basic document structure
      &lt;/body&gt;
 &lt;/html&gt;
   </code></pre>
-DOCTYPES
+<p>DOCTYPES</p>
 <p>If you&rsquo;ve looked at HTML pages before, you&rsquo;ve probably noticed a long, somewhat intimidating tag just before the opening HTML tag. This is a doctype declaration and it&rsquo;s a very important but often misunderstood component of HTML pages. Essentially, it tells the user agent parsing your page which version of HTML (or XHTML) to expect, so that it knows which syntax rules to use when rendering your page. The doctype you use should be based on the version of HTML you&rsquo;re using to author the page. While that all sounds good in theory, in reality most of the time a doctype is simply triggering &ldquo;standards-mode&rdquo; rather than &ldquo;quirks mode&rdquo; (based on older browsers non-standard way of rendering pages). For that reason alone, all HTML documents should be preceded by a doctype declaration. For more information on doctypes, and the history behind them, check out Mark Pilgrim&rsquo;s excellent section on doctypes from his <em>Dive Into HTML5</em> book. Here are some of the more common HTML doctypes:</p>
 HTML 4.0 transitional
 <pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</code></pre>
@@ -59,6 +64,7 @@ Comment syntax:
 <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
 Using special characters
 <p>Certain characters are reserved in HTML, meaning that you shouldn&rsquo;t use them outside of their specific purpose. The angle brackets, for example, are reserved for tags, and using them anywhere outside of a tag could cause parsing errors in browsers. However, you can still use these reserved characters and other special characters or symbols by using what is known as a <strong>named character entity</strong>. These special codes tell the user agent to replace the entity code with a specific character. These entities begin with an ampersand (&amp;) followed by the entity name and end with a semicolon (;). To display an ampersand, for example, you would type <strong>&amp;amp;</strong> in place of the actual ampersand. You can find named character entity lists within the HTML specifications, although the format for them can be a bit hard to read. You can also find a useful list of character entities on the <a href="reference.htm#named">HTML Reference</a> page, and a more comprehensive list on Wikipedia.</p>
-<p>&copy; lynda.com | follow me and lynda.com on Twitter! @jameswillweb @lyndadotcom</p>
+    <footer>
+<p>&copy; lynda.com | follow me and lynda.com on Twitter! @jameswillweb @lyndadotcom</p></footer>
 </body>
 </html>
